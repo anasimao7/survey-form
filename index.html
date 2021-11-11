@@ -21,8 +21,51 @@
     </header>
 
     <form action="#" id="survey-form">
-        <label for="name">Nome</label>
+        <label for="name-label">Nome</label>
         <input type="text" id="name" placeholder="Escreva o seu nome" required>
+        <br>
+        <label for="email-label">Email</label>
+        <input type="email" id="email" placeholder="Escreva o seu email" required>
+        <br>
+        <label for="number-label">Idade</label>
+        <input type="number" id="number" min="4" max="120" placeholder="Escreva a sua idade">
+        <br>
+        <label for="dropdown-label">Com que frequência lê?</label>
+        <select id="dropdown" name="dropdown">
+            <option value="opção-1">Uma vez por dia</option>
+            <option value="opção-2">Uma vez por semana</option>
+            <option value="opção-3">Uma vez por mês</option>
+            <option value="opção-4">Uma vez por ano</option>
+          </select>
+        <br>
+        <label for="radio-label">Quantos livros lê por ano?</label><br>
+        <input type="radio" id="1" name="opcao-1" value="1 a 5">
+        <label for="opcao-1">1 a 5 livros</label><br>
+        <input type="radio" id="2" name="opcao-2" value="5 a 10">
+        <label for="opcao-2">5 a 10 livros</label><br>
+        <input type="radio" id="3" name="opcao-3" value="10 a 20">
+        <label for="opcao-3">10 a 20 livros</label><br>
+        <input type="radio" id="4" name="opcao-4" value="20+">
+        <label for="opcao-4">Mais de 20 livros</label>
+        <br>
+        <label for="checkbox-label">Selecione os seus Gêneros Literários Favoritos:</label><br>
+        <input type="checkbox" id="romance" name="romance" value="Romance" checked>
+        <label for="romance">Romance</label><br>
+        <input type="checkbox" id="romance-historico" name="romance-historico" value="Romance Histórico">
+        <label for="romance-historico">Romance Histórico</label><br>
+        <input type="checkbox" id="policial-thriller" name="policial-thriller" value="Policial e Thriller">
+        <label for="policial-thriller">Policial e Thriller</label><br>
+        <input type="checkbox" id="ficcao-fantastico" name="ficcao-fantastico" value="Ficção e Fantástico">
+        <label for="ficcao-fantastico">Ficção e Fantástico</label><br>
+        <input type="checkbox" id="biografias" name="biografias" value="Biografias e Vidas Reais">
+        <label for="biografias">Biografias e Vidas Reais</label><br>
+        <input type="checkbox" id="cronicas-atualidade" name="cronicas-atualidade" value="Crónias e Atualidade">
+        <label for="cronicas-atualidade">Crónias e Atualidade</label><br>
+        <input type="checkbox" id="historia-politica" name="historia-politica" value="História e Política">
+        <label for="historia-politica">História e Política</label><br>
+        <input type="checkbox" id="humor" name="humor" value="Humor">
+        <label for="humor">Humor</label><br>
+
         
     </form>
     
