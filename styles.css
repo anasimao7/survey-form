@@ -6,7 +6,7 @@ body{
     font-family: 'Asap Condensed', sans-serif;
     background:linear-gradient(rgba(11, 81, 114, 0.7), rgba(8, 8, 148, 0.7), rgba(36, 12, 195, 0.7)), url(fundo.jpg);
     background-size: cover;
-    height: 1510px;
+    height: 1610px;
     color: white;
     z-index: 1;
 }
@@ -22,17 +22,9 @@ body{
     font-style: italic;
 }
 
-/*#survey-form{
-    background: transparent;
-    border-radius: 10px;
-    padding: 15px;
-    width: 500px;
-    margin: auto;
-}*/
-
 #survey-form{
     position: absolute;
-    top: 85%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
@@ -41,7 +33,7 @@ body{
     border-radius: 10px;
     box-shadow: 7px 7px 60px #000;
     font-size: 20px;
-    line-height: 40px;
+    line-height: 30px;
 }
 
 .control input{
@@ -52,6 +44,20 @@ body{
     border: none;
     outline: none;
     margin: 1px 0;
+}
+
+.control select{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    color: #222;
+    border: none;
+    outline: none;
+    margin: 1px 0;
+}
+
+.espaco{
+    margin-bottom: 30px;
 }
 
 button {
