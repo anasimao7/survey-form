@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hábitos de Leitura</title>
-    <link rel="icon" href="#">
+    <link rel="icon" href="icon.png">
     <link rel="stylesheet" href="styles.css">
 
     <!--Fonte-->
@@ -17,20 +17,23 @@
 <body>
     <header>
         <h1 id="title">Formulário de Pesquisa - Hábitos de Leitura</h1>
-        <p id="description">Obrigado por nos ajudar!</p>
+        <p id="description">Ajude-nos a entender o impacto da literatura nas nossas vidas!</p>
     </header>
 
     <form action="#" id="survey-form">
-        <label for="name-label">Nome</label>
-        <input type="text" id="name" placeholder="Escreva o seu nome" required>
-        <br>
-        <label for="email-label">Email</label>
-        <input type="email" id="email" placeholder="Escreva o seu email" required>
-        <br>
-        <label for="number-label">Idade</label>
-        <input type="number" id="number" min="4" max="120" placeholder="Escreva a sua idade">
-        <br>
+        <div class="control">
+            <label for="name" id="name-label">Nome</label>
+            <input type="text" id="name" placeholder="Escreva o seu nome" required>
+            <br>
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" placeholder="Escreva o seu email" required>
+            <br>
+            <label for="number" id="number-label">Idade</label>
+            <input type="number" id="number" min="4" max="120" placeholder="Escreva a sua idade">
+            <br>
+        </div>
         <label for="dropdown-label">Com que frequência lê?</label>
+        <br>
         <select id="dropdown" name="dropdown">
             <option value="opção-1">Uma vez por dia</option>
             <option value="opção-2">Uma vez por semana</option>
@@ -39,13 +42,13 @@
           </select>
         <br>
         <label for="radio-label">Quantos livros lê por ano?</label><br>
-        <input type="radio" id="1" name="opcao-1" value="1 a 5">
+        <input type="radio" id="1" name="quantidade" value="1 a 5">
         <label for="opcao-1">1 a 5 livros</label><br>
-        <input type="radio" id="2" name="opcao-2" value="5 a 10">
+        <input type="radio" id="2" name="quantidade" value="5 a 10">
         <label for="opcao-2">5 a 10 livros</label><br>
-        <input type="radio" id="3" name="opcao-3" value="10 a 20">
+        <input type="radio" id="3" name="quantidade" value="10 a 20">
         <label for="opcao-3">10 a 20 livros</label><br>
-        <input type="radio" id="4" name="opcao-4" value="20+">
+        <input type="radio" id="4" name="quantidade" value="20+">
         <label for="opcao-4">Mais de 20 livros</label>
         <br>
         <label for="checkbox-label">Selecione os seus Gêneros Literários Favoritos:</label><br>
@@ -64,10 +67,13 @@
         <input type="checkbox" id="historia-politica" name="historia-politica" value="História e Política">
         <label for="historia-politica">História e Política</label><br>
         <input type="checkbox" id="humor" name="humor" value="Humor">
-        <label for="humor">Humor</label><br>
-
-        
+        <label for="humor">Humor</label>  
+        <p>Por fim, qual ou quais são os seus livros favoritos?</p>
+        <textarea rows="4" cols="40" name="resposta" form="survey-form">Escreva aqui a sua resposta</textarea>
+        <br>
+        <div class="control">
+            <button id="submit" type="submit" form="survey-form" value="Submit">Enviar</button>
+        </div>    
     </form>
-    
 </body>
 </html>
